@@ -13,6 +13,7 @@ import Feature from './Feature.js';
 import Quote from './Quote.js';
 import Price from './Price.js';
 import Navbar from './Navbar.js';
+import BackToTop from './BackToTop.js';
 // import VendorCarousel from './VendorCarousel.js';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <Price />
       <Footer />
       <Copyright />
+      <BackToTop />
     </div>
   );
 }
