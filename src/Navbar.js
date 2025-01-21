@@ -6,24 +6,24 @@ function Navbar() {
     useEffect(() => {
         // Initiate WOW.js
         new WOW.WOW().init();
-    
+
         // Sticky Navbar
         const handleScroll = () => {
-          if ($(window).scrollTop() > 45) {
-            $(".navbar").addClass("sticky-top shadow-sm");
-          } else {
-            $(".navbar").removeClass("sticky-top shadow-sm");
-          }
+            if ($(window).scrollTop() > 45) {
+                $(".navbar").addClass("sticky-top shadow-sm");
+            } else {
+                $(".navbar").removeClass("sticky-top shadow-sm");
+            }
         };
-    
+
         // Attach the scroll event listener
         $(window).on("scroll", handleScroll);
-    
+
         // Cleanup
         return () => {
-          $(window).off("scroll", handleScroll);
+            $(window).off("scroll", handleScroll);
         };
-      }, []);
+    }, []);
     return (
         <div>
             <div className=" container-fluid position-relative p-0">
@@ -65,7 +65,7 @@ function Navbar() {
                 <img className="w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFjiSjGqTkwiIgBWGIVExHlProFLql-mnA5w&s" alt="Image" />
             </div>
         </div>
-            )
+    )
 }
 
-            export default Navbar
+export default Navbar
